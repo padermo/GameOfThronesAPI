@@ -1,0 +1,75 @@
+/* Globals */
+
+:root{
+  --fondo: #FAFBFB;
+}
+
+
+/*-------------------------------------------------------*/
+/* Body */
+.contenedor--principal{
+  margin: 20px 0;
+}
+.contenedor-personaje{
+  border: transparent black;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  width: 50vh;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: var(--fondo);
+  box-shadow: 1px 1px 4px rgb(66, 66, 66);
+}
+.contenedor-personaje h1{
+  margin: 10px 0;
+}
+.contenedor-personaje h3{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-style: italic;
+  margin: 15px 0;
+}
+.contenedor-personaje h4{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.contenedor-personaje h4 span{
+  font-weight: 600;
+}
+.imagen--personaje{
+  margin: 5px 10px;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 1px 1px 6px black;
+}
+.contenedor--principal{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*-------------------------------------------------------*/
+/* Responsive */
+
+@media screen and (max-width: 720px){
+  .contenedor--principal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor--principal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

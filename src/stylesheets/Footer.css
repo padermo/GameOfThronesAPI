@@ -1,0 +1,16 @@
+:root{
+  --fondoFooter: #1C1C1C;
+  --texto: #FEFFFE;
+}
+
+.contenedor--footer{
+  background-color: var(--fondoFooter);
+}
+.contenedor--elementos h3{
+  color: var(--texto);
+}
+.contenedor--elementos{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
